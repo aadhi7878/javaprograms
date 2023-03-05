@@ -6,7 +6,7 @@ public class dwdmcorrelation {
         double sum = 0.0;
         for(int i=0;i<n;i++){
             sum+=attribute[i];
-        }sum=sum/3;
+        }sum=sum/n;
         // System.out.println("mean is"+sum);
         return sum;
     }
