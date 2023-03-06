@@ -15,7 +15,7 @@ public class dwdmcorrelation {
         for(int i=0;i<attribute.length;i++){
             x+=Math.pow(attribute[i]-mean,2);
         }
-        double val=Math.sqrt(x/attribute.length-1);
+        double val=Math.sqrt(x/attribute.length);
         // System.out.println("standard deviaton is"+val);
         return val;
     }
@@ -23,7 +23,7 @@ public class dwdmcorrelation {
         double y=0.0;
         for(int i=0;i<attribute1.length;i++){
             y+=(attribute1[i]-mean1)*(attribute2[i]-mean2);
-        }return y/attribute1.length-1;
+        }return y/attribute1.length;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
